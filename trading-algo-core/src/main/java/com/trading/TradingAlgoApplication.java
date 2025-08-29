@@ -1,6 +1,5 @@
 package com.trading;
 
-import com.trading.TestModel;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,7 +10,9 @@ public class TradingAlgoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(TradingAlgoApplication.class, args);
-		TestModel testModel = TestModel.builder().number(23456).build();
+
+		TestModel testModel = TestModel.builder().number(1).build();
+		System.out.println(testModel.getNumber());
 		log.info(String.valueOf(testModel.getNumber()));
 	}
 

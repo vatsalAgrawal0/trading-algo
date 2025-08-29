@@ -1,38 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.5.5</version>
-		<relativePath/>
-	</parent>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.5.5</version>
+        <relativePath/>
+    </parent>
 
-	<groupId>com.trading</groupId>
-	<artifactId>trading-algo</artifactId>
-	<version>1.0</version>
-	<packaging>pom</packaging>
+    <groupId>com.trading</groupId>
+    <artifactId>trading-algo</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
 
-	<description>Trading Service</description>
+    <description>Trading Service</description>
 
-	<modules>
-		<module>trading-algo-models</module>
-		<module>trading-algo-core</module>
-		<module>trading-algo-server</module>
-		<module>trading-algo-plugins</module>
-	</modules>
+    <modules>
+        <module>trading-algo-models</module>
+        <module>trading-algo-core</module>
+        <module>trading-algo-server</module>
+        <module>trading-algo-plugins</module>
+    </modules>
 
-	<properties>
-		<java.version>24</java.version>
-	</properties>
+    <properties>
+        <java.version>24</java.version>
+        <lombok.version>1.18.38</lombok.version>
+    </properties>
 
-	<dependencies>
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<version>1.18.38</version>
-			<optional>true</optional>
-		</dependency>
-	</dependencies>
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
 </project>
